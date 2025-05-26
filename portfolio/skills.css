@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #081b29;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif
+    
+    
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+}
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a.active{
+    color:#00abf0;
+}
+
+.skill-container{
+    display: flex;
+    width: 97vw;
+    height: 92vh;
+    box-sizing: border-box;
+    margin-left: 30px;
+    align-items: center;
+    
+}
+.skill-container .skill-card1{
+    margin-left: 40px;
+    width: 50%;
+    & h2{
+        font-size: 32px;
+        font-weight: 700;
+        color:#00abf0;
+    }
+    & h3{
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 20px;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #00abf0;
+            cursor: pointer;
+        }
+    }
+    & h4{
+        font-size: 26px;
+        font-weight: 600;
+        margin-top: 20px;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #00abf0;
+            cursor: pointer;
+        }
+    }
+    & p{
+        font-size: 20px;
+        margin: 20px 0 30px;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #00abf0;
+            cursor: pointer;
+        }
+    }
+    & li{
+        font-size: 20px;
+        margin: 20px 0 30px;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #00abf0;
+            cursor: pointer;
+        }
+    }
+}
+.skill-container .skill-card2{
+    margin-left: 40px;
+    width: 50%;
+    & h2{
+        font-size: 32px;
+        font-weight: 700;
+        color:#00abf0;
+    }
+    & h3{
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 20px;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #00abf0;
+            cursor: pointer;
+        }
+    }
+    & h4{
+        font-size: 26px;
+        font-weight: 600;
+        margin-top: 20px;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #00abf0;
+            cursor: pointer;
+        }
+    }
+    & p{
+        font-size: 20px;
+        margin: 20px 0 30px;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #00abf0;
+            cursor: pointer;
+        }
+    }
+    & li{
+        font-size: 20px;
+        margin: 20px 0 30px;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #00abf0;
+            cursor: pointer;
+        }
+    }
+}
+
+.social-links{
+    display: flex;
+    height: 5vh;
+    justify-content: center ;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    color: #081b29;
+    & a{
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #00abf0;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #00abf0;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 10px 10px;
+        transition: 0.2s;
+    }
+}
+.social-links a:hover{
+        border-color: #081b29;
+        color: #081b29;
+        background-color: #00abf0;
+}
+@media screen and (max-width: 750px){
+    .skill-container{
+        height: 94%;
+    }
+    .social-links{
+        height: 5%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .navbar a{
+        margin-left: 20px;
+    }
+    .skill-container{
+        margin-top: 70px;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .skill-container .skill-card2{
+        margin-left: 0;
+    }
+    .skill-container .skill-card1{
+        margin-left: 0;
+    }
+}

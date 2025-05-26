@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #081b29;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif
+    
+    
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+}
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a.active{
+    color:#00abf0;
+}
+
+.contactcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition-duration: 0.3s;
+    height: 92vh;
+    gap: 10px;
+    
+}
+.contactcontainer .contactgrid1{
+    margin-top: 100px;
+    margin-left: 50px;
+    padding: 10px;
+    & h2{
+        font-size: 32px;
+        font-weight: 700;
+        color:#00abf0;
+    }
+    & h3{
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 20px;
+        color: #00abf0;
+       
+    }
+    & p{
+        font-size: 20px;
+        margin: 20px 0 30px;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #00abf0;
+            cursor: pointer;
+        }
+    }
+    & li{
+        font-size: 20px;
+        margin: 20px 0 30px;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #00abf0;
+            cursor: pointer;
+        }
+    } 
+}
+
+.contactcontainer .contactgrid2{
+    margin-top: 100px;
+    margin-left: 200px;
+    padding: 10px;
+    & h2{
+        font-size: 32px;
+        font-weight: 700;
+        color:#00abf0;
+    }
+    & h3{
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 20px;
+        color: #00abf0;
+        
+    }
+    & p{
+        font-size: 20px;
+        margin: 20px 0 30px;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #00abf0;
+            cursor: pointer;
+        }
+    }
+    & .field {
+        padding: 40px;
+        margin-right: 30px;
+        box-sizing: border-box;
+        margin-right: 200px; 
+        border: 1px solid #00abf0;
+        & label{
+            font-size: 18px;
+        }
+        & input{
+            padding: 2px;
+        }
+        & button{
+            padding: 10px;
+            margin-left: 80px;
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: #00abf0;
+            &:hover{
+                cursor: pointer;
+                background-color: #081b29;
+                color: #00abf0;
+                border-color: #00abf0;
+            }
+        }
+    }
+    
+}
+
+
+.social-links{
+    display: flex;
+    height: 5vh;
+    justify-content: center ;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    color: #081b29;
+    & a{
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #00abf0;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #00abf0;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 10px 10px;
+        transition: 0.2s;
+    }
+}
+.social-links a:hover{
+        border-color: #081b29;
+        color: #081b29;
+        background-color: #00abf0;
+}
+@media screen and (max-width: 750px){
+    .contactcontainer{
+        height: 94%;
+    }
+    .social-links{
+        height: 5%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .navbar a{
+        margin-left: 20px;
+    }
+    .contactcontainer{
+        grid-template-columns: auto;
+        width: 100vw;
+
+    }
+    .contactcontainer .contactgrid2{
+        margin-left: 15px;
+        
+    }
+    .contactcontainer .contactgrid1{
+        margin-left: 15px;
+        margin-right: 5px;
+        & li{
+            list-style: none;
+        }
+    }
+    .contactcontainer .contactgrid2 .field{
+        margin-right: 80px; 
+    }
+    .contactcontainer .contactgrid1 .para{
+        text-align: justify;
+    }
+    .contactcontainer .contactgrid2 .field button{
+        margin-left: 45px;
+    }
+}
